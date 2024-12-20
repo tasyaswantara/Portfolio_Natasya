@@ -52,7 +52,7 @@ const Contact = () => {
   
     return (
       <div
-      className=" hidden md:flex h-32 w-1/5  flex-col justify-center pl-4 z-40"
+      className=" hidden md:flex h-32 w-[25%] gap-4 items-center   pl-6 z-40"
         style={{
           position: "absolute",
           top: "10px",
@@ -64,8 +64,12 @@ const Contact = () => {
           zIndex: 1000,
         }}
       >
+         <FiMapPin size={40} className="mb-4 text-gray-700 ml-4" />
+        <div className=" flex flex-col justify-center">
+
         <h3 className="text-xl font-bold">Malang, Jawa Timur</h3>
         <p className=" text-lg">Bulan Terang Utama UJ 29 / 23</p>
+        </div>
        
       </div>
     );

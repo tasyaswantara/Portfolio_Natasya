@@ -166,7 +166,7 @@ const Portfolio = () => {
       </div>
 
       {/* Portfolio Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6 md:px-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6 md:px-24">
         {portfolioItems.map((item) => (
           <div
             key={item.id}
@@ -191,18 +191,18 @@ const Portfolio = () => {
       {/* Popup */}
       {showPopup && selectedItem && (
         <div className="fixed inset-0 bg-black bg-opacity-20 backdrop-blur-sm  z-[999] flex justify-center  overflow-y-auto scrollbar-hidden custom-scrollbar">
-          <div className="  bg-white w-full md:w-1/2 h-max pb-16   rounded-t-full mt-[15vh] transform transition-all duration-500 animate-slide-up   shadow-2xl shadow-pink-500 ">
+          <div className="  bg-white w-full md:w-[80vw] h-max pb-16   rounded-t-2xl mt-[15vh] transform transition-all duration-500 animate-slide-up   shadow-2xl shadow-pink-500 ">
             <button
               className="absolute -top-5 md:top-4 right-4 text-gray-600 hover:text-gray-900  bg-pink-200 w-14 h-14  rounded-full  text-2xl"
               onClick={closePopup}
             >
               &times;
             </button>
-            <div className=" w-full h-full pt-[10%] md:px-20 px-8">
+            <div className=" w-full h-full pt-[5%] md:px-20 px-8">
               <img
                 src={selectedItem.image}
                 alt={selectedItem.title}
-                className="w-full h-96   object-cover object-top rounded-t-full mb-4 shadow-md "
+                className="w-full h-[700px]   object-cover object-top rounded-xl mb-4 shadow-md "
               />
               <div className=" w-full flex items-center gap-4 mt-10">
                 <h2 className="text-4xl font-bold mb-4 text-pink-600 w-auto">

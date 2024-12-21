@@ -52,7 +52,7 @@ const Contact = () => {
   
     return (
       <div
-      className=" hidden md:flex h-32 w-[25%] gap-4 items-center   pl-6 z-40"
+      className=" hidden md:flex h-32 w-auto gap-4 items-center  z-40"
         style={{
           position: "absolute",
           top: "10px",
@@ -68,7 +68,7 @@ const Contact = () => {
         <div className=" flex flex-col justify-center">
 
         <h3 className="text-xl font-bold">Malang, Jawa Timur</h3>
-        <p className=" text-lg">Bulan Terang Utama UJ 29 / 23</p>
+        <p className=" text-lg mr-4">Bulan Terang Utama UJ 29 / 23</p>
         </div>
        
       </div>
